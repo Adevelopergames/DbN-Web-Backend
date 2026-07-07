@@ -30,7 +30,7 @@ passport.use(
                 discord: {
                     id: profile.id,
                     username: profile.username,
-                    displayName: profile.username,
+                    displayName: profile.global_name || profile.username,
                     discriminator: profile.discriminator,
                     avatar: profile.avatar,
                     avatarURL: avatarURL
