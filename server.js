@@ -39,9 +39,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.get("/", (req, res) => {
-
-    res.send("DbN Backend Online 🚀");
-
+    res.send("DbN Backend Online v2 🚀");
 });
 
 const PORT = process.env.PORT || 3000;
