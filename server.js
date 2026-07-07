@@ -13,8 +13,7 @@ const cors = require("cors");
 const app = express();
 
 const allowedOrigins = [
-    "http://localhost:5500",
-    "https://deadbynightlight.online"
+    "https://deadbynightlight.online",
 ];
 
 app.use(cors({
