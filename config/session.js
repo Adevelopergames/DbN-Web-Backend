@@ -8,7 +8,8 @@ module.exports = session({
 
     cookie: {
         httpOnly: true,
-        secure: false,
-        maxAge: 1000 * 60 * 60 * 24 * 7 // 7 días
+        secure: true,
+        sameSite: "none",
+        maxAge: 1000 * 60 * 60 * 24 * 7
     }
 });

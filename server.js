@@ -11,6 +11,7 @@ const passport = require("passport");
 const cors = require("cors");
 
 const app = express();
+app.set("trust proxy", 1);
 
 const allowedOrigins = [
     "https://deadbynightlight.online",
