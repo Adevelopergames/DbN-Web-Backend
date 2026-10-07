@@ -1,1 +1,109 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Dead By NightLight</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="../js/dashboard.js" defer></script>
+</head>
+<body>
+
+    <header class="dashboard-header">
+        <a class="brand" href="../">
+            <span class="brand-logo">DbN</span>
+            <span>
+                <strong>DEAD BY NIGHTLIGHT</strong>
+                <small>USER DASHBOARD</small>
+            </span>
+        </a>
+
+        <a href="../" class="back-button">Back to website</a>
+    </header>
+
+    <main class="dashboard-container">
+
+        <section class="welcome-section">
+            <p class="eyebrow">PLAYER CENTER</p>
+            <h1>Welcome back, <span id="welcome-name">Player</span></h1>
+            <p>Manage your account and access your player information.</p>
+        </section>
+
+        <section class="profile-card">
+            <div class="profile-heading">
+                <img id="discord-avatar" src="" alt="Discord avatar">
+
+                <div class="profile-info">
+                    <h2 id="discord-name">Loading...</h2>
+                    <p id="discord-username"></p>
+                    <span class="status-badge">Discord connected</span>
+                </div>
+            </div>
+
+            <div class="profile-details">
+                <div class="detail-item">
+                    <span>ACCOUNT PROVIDER</span>
+                    <strong>Discord</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>DISCORD USER ID</span>
+                    <strong id="discord-id">Loading...</strong>
+                </div>
+
+                <div class="detail-item">
+                    <span>ACCOUNT STATUS</span>
+                    <strong class="status-text">Authenticated</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="dashboard-grid">
+
+            <article class="dashboard-card">
+                <div class="card-icon">🎮</div>
+                <h2>Roblox Profile</h2>
+                <p id="roblox-status">
+                    Your Roblox account has not been linked yet.
+                </p>
+                <button class="action-button" id="roblox-button" disabled>
+                    Coming soon
+                </button>
+            </article>
+
+            <article class="dashboard-card">
+                <div class="card-icon">🏆</div>
+                <h2>Achievements</h2>
+                <p>View your Dead By NightLight achievements and progress.</p>
+                <div class="placeholder-label">NOT AVAILABLE YET</div>
+            </article>
+
+            <article class="dashboard-card">
+                <div class="card-icon">📊</div>
+                <h2>Player Statistics</h2>
+                <p>Your game statistics will appear here once the game integration is implemented.</p>
+                <div class="placeholder-label">NOT AVAILABLE YET</div>
+            </article>
+
+            <article class="dashboard-card">
+                <div class="card-icon">⚙️</div>
+                <h2>Account Settings</h2>
+                <p>Account preferences and linked services.</p>
+                <div class="placeholder-label">NOT AVAILABLE YET</div>
+            </article>
+
+        </section>
+
+        <p id="dashboard-error" class="error-message" hidden></p>
+
+    </main>
+
+    <footer class="dashboard-footer">
+        Dead By NightLight &copy; 2026 - Adeveloper_games
+    </footer>
+
+</body>
+</html>
